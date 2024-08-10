@@ -1,0 +1,40 @@
+<tui-doc-page
+    header="Icons material"
+    package="icons-material"
+    type="components"
+>
+    <p>
+        Latest optimized SVGs
+        <a
+            href="https://marella.me/material-design-icons/demo/font/"
+            tuiLink
+        >
+            material icons
+        </a>
+        for your Material Design.
+    </p>
+
+    <tui-accordion>
+        <tui-accordion-item [open]="false">
+            Getting started
+
+            <ng-template tuiAccordionItemContent>
+                <tui-doc-code code="npm i @taiga-ui/icons-material" />
+
+                <tui-doc-code
+                    filename="angular.json"
+                    [code]="assets"
+                />
+            </ng-template>
+        </tui-accordion-item>
+    </tui-accordion>
+
+    <ng-template pageTab>
+        <tui-doc-example
+            id="basic"
+            heading="Basic"
+            [component]="1 | tuiComponent"
+            [content]="1 | tuiExample"
+        />
+    </ng-template>
+</tui-doc-page>
